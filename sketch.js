@@ -55,3 +55,4 @@ function draw()
     	image(img8, i*(100+img.width)+timing*(100+img.width),603);
 
     } 
+}
