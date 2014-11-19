@@ -49,8 +49,8 @@ function draw()
     image(img6,212,724);
 
     fill(0);
-    for(var i = -1 ; i <8 ; i++){
-    	image(img8, i*(50+img.width)+timing*(50+img.width),603);
+    for(var i = -1 ; i <10 ; i++){
+    	image(img8, i*(15+img.width)+timing*(15+img.width),603);
 
     } 
 
