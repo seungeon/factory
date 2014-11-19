@@ -11,6 +11,8 @@ var img8;
 var i;
 var timing;
 var duration;
+var img9;
+var img10;
 
 function setup()
 {
@@ -24,6 +26,8 @@ function setup()
     img6 = loadImage("bottomMid.png");
     img7 = loadImage("midBoxCopy.png");
     img8 = loadImage("cookie.png");
+    img9 = loadImage("bottomCup.png");
+    img10 = loadImage("bottomCup2.png");
    
 
 
@@ -37,7 +41,7 @@ function draw()
     fill(237,112,50);
     noStroke();
 
-    var duration = 5000;
+    var duration = 3000;
     var timing = (new Date()%duration)/duration;
 
 
@@ -57,4 +61,13 @@ function draw()
     image(img7,204,499);
     image(img2,204,499);
     image(img3,495,451);
+
+
+      if(timing*2 <1){
+    image(img9, timing*901,741);
+    } else if(timing*2 <2){
+    image(img10, timing*901,741);
+    }
+
+
 }
