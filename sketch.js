@@ -87,7 +87,7 @@ function draw()
 
     fill(0);
     for(var i = -1 ; i <10 ; i++){
-    	image(img8, i*(15+img.width)+timing*(15+img.width),603);
+    image(img8, i*(15+img.width)+timing*(15+img.width),603);
 
     } 
 
@@ -96,7 +96,7 @@ function draw()
     image(img3,495,451);
 
 
-      if(timing*2 <1){
+    if(timing*2 <1){
     image(img9, timing*600,741);
     } else if(timing*2 <2){
     image(img10, timing*700,727);
@@ -110,15 +110,24 @@ function draw()
     if(timing*3 <1){
     image(cup6,312,274);
     } else if(timing*3 <2){
-    image(img2, timing*900,10);
+    image(cup1,312,274);
     }else{
-    image(img3, timing*900,10);
+    image(cup2,312,274);
 
     } 
 
 
     image(cup5,213,274);
     
+
+    if(timing*3 <1){
     image(cup7,408,274);
+    } else if(timing*3 <2){
+    image(cup3,408,274);
+    }else{
+    image(cup4,408,274);
+
+    } 
+    
 
 }
