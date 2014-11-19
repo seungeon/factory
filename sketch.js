@@ -216,7 +216,7 @@ function draw()
 
 
     fill(0);
-    for(var i = -1 ; i <10 ; i++){
+    for(var i = -1 ; i <5 ; i++){
     image(candy3,592,i*(30+img.hight)+timing*(30+img.hight));
 
     } 
