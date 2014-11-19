@@ -13,6 +13,8 @@ var timing;
 var duration;
 var img9;
 var img10;
+var img11;
+var img12;
 
 var photo;
 var photo2; 
@@ -42,6 +44,10 @@ function setup()
     img8 = loadImage("cookie.png");
     img9 = loadImage("bottomCup.png");
     img10 = loadImage("bottomCup2.png");
+    img11 = loadImage("timer.png");
+    img12 = loadImage("timer2.png");
+
+
     photo = loadImage("up1.png");
     photo2 = loadImage("up2.png");
     photo3 = loadImage("up3.png");
@@ -82,6 +88,8 @@ function draw()
 
  
     image(img,254,0);
+    image(img11,506,217);
+    image(img12,526,228);
 
 
 
