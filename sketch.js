@@ -25,6 +25,6 @@ function draw()
  
     image(img,254,0);
     image(img2,204,499);
-    image(img3,495,576);
+    image(img3,495,451);
  
     } 
