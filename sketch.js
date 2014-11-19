@@ -91,6 +91,10 @@ function draw()
     image(img11,506,217);
     image(img12,526,228);
 
+    fill(225,mouseY*225/320,mouseY*225/210);
+    noStroke;
+    ellipse(529.5,240.5,10,10);
+
 
 
     fill(0);
