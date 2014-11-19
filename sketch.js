@@ -208,11 +208,18 @@ function draw()
       }
 
 
-    image(candy3,592,timing*380);
+ 
     image(candy2,578,timing*380);
     image(candy1,590,timing*380);
 
 
+
+
+    fill(0);
+    for(var i = -1 ; i <10 ; i++){
+    image(candy3,592,i*(30+img.hight)+timing*(30+img.hight));
+
+    } 
 
     image(photo4,544,0);
     image(photo6,562,375)
