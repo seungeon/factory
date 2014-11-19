@@ -43,9 +43,7 @@ function draw()
 
  
     image(img,254,0);
-    image(img7,204,499);
-    image(img2,204,499);
-    image(img3,495,451);
+
     image(img4,556,714);
     image(img5,0,700);
     image(img6,212,724);
@@ -55,4 +53,8 @@ function draw()
     	image(img8, i*(100+img.width)+timing*(100+img.width),603);
 
     } 
+
+    image(img7,204,499);
+    image(img2,204,499);
+    image(img3,495,451);
 }
