@@ -8,7 +8,9 @@ var img5;
 var img6;
 var img7;
 var img8;
-
+var i;
+var timing;
+var duration;
 
 function setup()
 {
