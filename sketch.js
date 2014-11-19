@@ -84,7 +84,7 @@ function draw()
     image(photo,248,124);
     image(photo2,347,124);
     image(photo3,444,124);
-    image(photo4,544,0);
+    
     image(photo5,568,117)
     image(photo6,562,375)
 
@@ -201,5 +201,13 @@ function draw()
     if(dir3>130){
      dir3=40;
       }
+
+
+
+
+    image(photo4,544,0);
+    
+
+      
 
     }
