@@ -41,7 +41,7 @@ function draw()
     fill(237,112,50);
     noStroke();
 
-    var duration = 6000;
+    var duration = 3000;
     var timing = (new Date()%duration)/duration;
 
 
@@ -62,9 +62,9 @@ function draw()
 
 
       if(timing*2 <1){
-    image(img9, timing*901,741);
+    image(img9, timing*500,741);
     } else if(timing*2 <2){
-    image(img10, timing*901,741);
+    image(img10, timing*500,727);
     }
 
     image(img4,556,714);
