@@ -1,5 +1,7 @@
 var bg;
-
+var dir1=1;
+var dir2=1;
+var dir3=1;
 var img;  
 var img2;
 var img3;
@@ -74,6 +76,10 @@ function draw()
     fill(237,112,50);
     noStroke();
 
+    drawSnow1();
+    drawSnow2();
+    drawSnow3();
+
 
     image(photo,248,124);
     image(photo2,347,124);
@@ -142,4 +148,58 @@ function draw()
     } 
     
 
-}
+    }
+
+    function drawSnow1(){
+    noStroke();
+    
+    fill(234,147,183); 
+    ellipse(265,dir1+20,3,3);
+    ellipse(270,dir1+33,4,4);
+    ellipse(278,dir1+27,7,7);
+    ellipse(285,dir1+10,5,5);
+    ellipse(290,dir1+16,3,3);
+
+
+    dir1=dir1+1.5;    
+    if(dir1>130){
+     dir1=40;
+    }
+
+    }    
+
+    function drawSnow2(){
+
+    noStroke();
+
+    fill(89,47,19);
+    ellipse(380,dir2+20,3,3);
+    ellipse(365,dir2+33,4,4);
+    ellipse(378,dir2+27,7,7);
+    ellipse(390,dir2+10,5,5);
+    ellipse(370,dir2+16,3,3);
+    
+    dir2=dir2+1;    
+    if(dir2>130){
+     dir2=40;
+      }
+  
+    }
+
+    function drawSnow3(){
+
+    noStroke();
+
+    fill(127,203,183);
+    ellipse(490,dir3+20,3,3);
+    ellipse(475,dir3+33,4,4);
+    ellipse(460,dir3+27,7,7);
+    ellipse(483,dir3+10,5,5);
+    ellipse(480,dir3+16,3,3);
+    
+    dir3=dir3+0.8;    
+    if(dir3>130){
+     dir3=40;
+      }
+
+    }
