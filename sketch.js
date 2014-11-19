@@ -10,6 +10,8 @@ function setup()
     createCanvas(641,901);
     bg = loadImage("bg.png");
     img = loadImage("sugarBox.png");
+    img2 = loadImage("midBox.png");
+    img3 = loadImage("midBox2.png");
 
 }
 
@@ -22,5 +24,7 @@ function draw()
     noStroke();
  
     image(img,254,0);
-
+    image(img2,204,499);
+    image(img3,495,676);
+ 
     } 
