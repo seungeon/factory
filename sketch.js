@@ -121,11 +121,11 @@ function draw()
     
 
     if(timing*3 <1){
-    image(cup7,408,271);
+    image(cup7,408,251);
     } else if(timing*3 <2){
-    image(cup1,408,271);
+    image(cup1,408,251);
     }else{
-    image(cup2,408,271);
+    image(cup2,408,251);
 
     } 
     
