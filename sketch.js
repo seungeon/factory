@@ -23,6 +23,11 @@ var photo6;
 
 
 
+var cup5;
+var cup6;
+var cup7;
+
+
 function setup()
 {
     createCanvas(641,901);
@@ -43,6 +48,13 @@ function setup()
     photo4 = loadImage("candyBox2.png");
     photo5 = loadImage("rightLine.png");
     photo6 = loadImage("candyBox.png");
+    cup5 = loadImage("cup5.png");
+    cup6 = loadImage("cup6.png");
+    cup7 = loadImage("cup7.png");
+    cup1 = loadImage("cup1.png");
+    cup2 = loadImage("cup2.png");
+    cup3 = loadImage("cup3.png");
+    cup4 = loadImage("cup4.png");
    
 
 
@@ -94,5 +106,19 @@ function draw()
     image(img5,0,700);
     image(img6,212,724);
 
+
+    if(timing*3 <1){
+    image(cup6,312,274);
+    } else if(timing*3 <2){
+    image(img2, timing*900,10);
+    }else{
+    image(img3, timing*900,10);
+
+    } 
+
+
+    image(cup5,213,274);
+    
+    image(cup7,408,274);
 
 }
