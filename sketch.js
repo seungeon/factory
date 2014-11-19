@@ -14,6 +14,15 @@ var duration;
 var img9;
 var img10;
 
+var photo;
+var photo2; 
+var photo3; 
+var photo4;
+var photo5;  
+var photo6;
+
+
+
 function setup()
 {
     createCanvas(641,901);
@@ -28,6 +37,12 @@ function setup()
     img8 = loadImage("cookie.png");
     img9 = loadImage("bottomCup.png");
     img10 = loadImage("bottomCup2.png");
+    photo = loadImage("up1.png");
+    photo2 = loadImage("up2.png");
+    photo3 = loadImage("up3.png");
+    photo4 = loadImage("candyBox2.png");
+    photo5 = loadImage("rightLine.png");
+    photo6 = loadImage("candyBox.png");
    
 
 
@@ -40,6 +55,14 @@ function draw()
 
     fill(237,112,50);
     noStroke();
+
+
+    image(photo,248,124);
+    image(photo2,347,124);
+    image(photo3,444,124);
+    image(photo4,544,0);
+    image(photo5,568,117)
+    image(photo6,562,375)
 
     var duration = 3000;
     var timing = (new Date()%duration)/duration;
