@@ -6,7 +6,7 @@ var img3;
 var img4;
 var img5;
 var img6;
-var img7;
+
 var img8;
 var i;
 var timing;
@@ -24,7 +24,7 @@ function setup()
     img4 = loadImage("bottomR.png");
     img5 = loadImage("bottomL.png");
     img6 = loadImage("bottomMid.png");
-    img7 = loadImage("midBoxCopy.png");
+
     img8 = loadImage("cookie.png");
     img9 = loadImage("bottomCup.png");
     img10 = loadImage("bottomCup2.png");
@@ -56,7 +56,7 @@ function draw()
 
     } 
 
-    image(img7,204,499);
+
     image(img2,204,499);
     image(img3,495,451);
 
