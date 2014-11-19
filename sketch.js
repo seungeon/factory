@@ -26,7 +26,9 @@ var photo5;
 var photo6;
 
 
-
+var candy1;
+var candy2;
+var candy3;
 var cup5;
 var cup6;
 var cup7;
@@ -63,7 +65,10 @@ function setup()
     cup2 = loadImage("cup2.png");
     cup3 = loadImage("cup3.png");
     cup4 = loadImage("cup4.png");
-   
+
+    candy1 = loadImage("candy1.png");
+    candy2 = loadImage("candy2.png");
+    candy3 = loadImage("candy3.png");
 
 
 }
@@ -86,7 +91,7 @@ function draw()
     image(photo3,444,124);
     
     image(photo5,568,117)
-    image(photo6,562,375)
+    
 
     var duration = 3000;
     var timing = (new Date()%duration)/duration;
@@ -203,11 +208,15 @@ function draw()
       }
 
 
+    image(candy3,592,timing*380);
+    image(candy2,578,timing*380);
+    image(candy1,590,timing*380);
+
 
 
     image(photo4,544,0);
-    
+    image(photo6,562,375)
 
-      
+
 
     }
