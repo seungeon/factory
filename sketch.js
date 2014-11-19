@@ -56,7 +56,7 @@ function setup()
     photo2 = loadImage("up2.png");
     photo3 = loadImage("up3.png");
     photo4 = loadImage("candyBox2.png");
-    photo5 = loadImage("rightLine.png");
+    //photo5 = loadImage("rightLine.png");
     photo6 = loadImage("candyBox.png");
     cup5 = loadImage("cup5.png");
     cup6 = loadImage("cup6.png");
@@ -90,7 +90,7 @@ function draw()
     image(photo2,347,124);
     image(photo3,444,124);
     
-    image(photo5,568,117)
+    //image(photo5,568,117);
     
 
     var duration = 3000;
@@ -222,7 +222,7 @@ function draw()
     } 
 
     image(photo4,544,0);
-    image(photo6,562,375)
+    image(photo6,562,375);
 
 
 
