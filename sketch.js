@@ -26,12 +26,13 @@ var photo5;
 var photo6;
 
 
-var candy1;
-var candy2;
-var candy3;
 var cup5;
 var cup6;
 var cup7;
+
+var count;
+var count1;
+var count2;
 
 
 function setup()
@@ -56,7 +57,7 @@ function setup()
     photo2 = loadImage("up2.png");
     photo3 = loadImage("up3.png");
     photo4 = loadImage("candyBox2.png");
-    //photo5 = loadImage("rightLine.png");
+    photo5 = loadImage("rightLine.png");
     photo6 = loadImage("candyBox.png");
     cup5 = loadImage("cup5.png");
     cup6 = loadImage("cup6.png");
@@ -66,10 +67,13 @@ function setup()
     cup3 = loadImage("cup3.png");
     cup4 = loadImage("cup4.png");
 
-    candy1 = loadImage("candy1.png");
-    candy2 = loadImage("candy2.png");
-    candy3 = loadImage("candy3.png");
+    photo7 = loadImage("candy1.png");
+    photo8 = loadImage("candy2.png");
+    photo9 = loadImage("candy3.png");
 
+    count=0;
+    count1=0;
+    count2=0;
 
 }
 
@@ -90,7 +94,7 @@ function draw()
     image(photo2,347,124);
     image(photo3,444,124);
     
-    //image(photo5,568,117);
+    image(photo5,568,117);
     
 
     var duration = 3000;
@@ -209,20 +213,34 @@ function draw()
 
 
  
-    image(candy2,578,timing*380);
-    image(candy1,590,timing*380);
+    image(photo7,574,count);
+    count=count+2;
+     if(count>360){
+    count=0;
+    }  
+
+    image(photo8,582,count1+100);
+    count1=count1+1;
+     if(count1>280){
+    count1=0;
+    }  
+
+
+    image(photo9,590,count2+50);
+    count2=count2+1.5;
+     if(count2>320){
+    count2=0;
+    }  
+
+
+
+    photo4 = loadImage("candyBox2.png");
+   
+    photo6 = loadImage("candyBox.png");
 
 
 
 
-    fill(0);
-    for(var i = -1 ; i <5 ; i++){
-    image(candy3,592,i*(30+img.hight)+timing*(30+img.hight));
-
-    } 
-
-    image(photo4,544,0);
-    image(photo6,562,375);
 
 
 
