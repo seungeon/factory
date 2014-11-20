@@ -1,7 +1,7 @@
 var bg;
-var dir1=1;
-var dir2=1;
-var dir3=1;
+var dir1=40;
+var dir2=40;
+var dir3=40;
 var img;  
 var img2;
 var img3;
@@ -34,9 +34,13 @@ var count;
 var count1;
 var count2;
 
+var c;
 
 function setup()
 {
+    c = 0;
+
+
     createCanvas(641,901);
     bg = loadImage("bg.png");
     img = loadImage("sugarBox.png");
@@ -83,6 +87,7 @@ function setup()
 function draw()
 {
     background(bg);
+    
 
     fill(237,112,50);
     noStroke();
@@ -121,7 +126,7 @@ function draw()
     } 
 
 
-    image(img2,204,499);
+  
     image(img3,495,451);
 
 
@@ -157,11 +162,42 @@ function draw()
     image(cup2,408,264);
 
     } 
-    
+/*    
+    if(f){
+        if(c > 10){
+            c=0;
+            f=false;
+        }else{
+            fill(255,255,0);
+            ellipse(100,100+c*5,100,100);
+            c= c+1;
+        }
+*/
+
+    if(f){
+    if(c < -17){
+        c=0;
+        f=false;
+    }else{
+        stroke(255,255,255,128);
+        strokeWeight(7);
+        fill(255,255,255);
+        ellipse(305,500+c*5,30,30);
+        ellipse(295,530+c*5,10,10);
+        ellipse(315,560+c*5,7,7);
+        c= c-1;
+        }
+
 
     }
 
-    function drawSnow1(){
+              image(img2,204,499);
+}
+
+
+
+
+function drawSnow1(){
     noStroke();
     
     fill(234,147,183); 
@@ -242,5 +278,13 @@ function draw()
 
 
 
+
+    }
+
+var f = false;
+    function mouseClicked(){
+        if (!f){
+            f=true;
+        }
 
     }
